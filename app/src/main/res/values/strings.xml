@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">jsonian</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="urlCode">https://api.jsonbin.io/b/5f7d20da65b18913fc5bc7b4/1</string>
+</resources>
