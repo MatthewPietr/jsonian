@@ -87,7 +87,7 @@ public class ItemListActivity extends AppCompatActivity {
             // activity should be in two-pane mode.
             mTwoPane = true;
         }
-        hand.postDelayed(running, 100);
+        hand.postDelayed(running, 1000);
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
@@ -140,7 +140,7 @@ public class ItemListActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mIdView.setText(mValues.get(position).company);
-            holder.mContentView.setText(mValues.get(position).founded);
+            holder.mContentView.setText(String.valueOf(mValues.get(position).founded));
 
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);
